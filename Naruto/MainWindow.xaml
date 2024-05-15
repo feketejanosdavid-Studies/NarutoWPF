@@ -29,8 +29,8 @@
                        MouseLeftButtonDown="navbar_MouseLeftButtonDown">
             </TextBlock>
             <StackPanel Grid.Row="1">
-                <RadioButton Command="openHome" Content="Home" Style="{StaticResource MenuButtonTheme}"></RadioButton>
-                <RadioButton Command="openUsers" Content="Users" Style="{StaticResource MenuButtonTheme}"></RadioButton>
+                <RadioButton Command="{Binding openHome}" Content="Home" Style="{StaticResource MenuButtonTheme}"></RadioButton>
+                <RadioButton Command="{Binding openUsers}" Content="Users" Style="{StaticResource MenuButtonTheme}"></RadioButton>
                 <RadioButton x:Name="CloseButton" Click="CloseButton_Click" Content="Close" Style="{StaticResource MenuButtonTheme}"></RadioButton>
             </StackPanel>
             <ContentControl Content="{Binding CurrentView}" Grid.Row="1" Grid.Column="1"></ContentControl>
